@@ -44,6 +44,7 @@ header {
     display: flex;
 }
 
+/* 구글 폰트 사용 */
 #main-title .logo a {
     text-decoration: none;
     color: white;
