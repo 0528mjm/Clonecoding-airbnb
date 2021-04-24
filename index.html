@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>휴가용 숙소 임대, 숙소, 호텔 체험 및 장소 - 에어비앤비</title>
-    <!-- 타이틀에 에어비앤비 로고 삽입 -->
+    <!-- 타이틀에 에어비앤비 파비콘 삽입 -->
     <link rel="icon" href="./favicon.ico">
     <!-- 각 브라우저의 기본 스타일을 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
@@ -17,21 +17,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <!-- 코로나19 -->
-    <section>
-        <div id="title"><a href="https://www.airbnb.co.kr/resources/hosting-homes?persona=guest">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a></div>
+    <!-- 코로나19 섹션 -->
+    <section id="title">
+        <a href="https://www.airbnb.co.kr/resources/hosting-homes?persona=guest">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
     </section>
 
+    <!-- 헤더 -->
     <header>
         <div id="main-title">
+            <!-- 에어비앤비 로고 -->
             <div class="logo">
-                <img src="images/에어비앤비 로고 흰색.png"; style="width:38px; height:38px;"/>
+                <img src="images/에어비앤비 로고 흰색.png" ; style="width:38px; height:38px;">
                 <a href="index.html">
                     airbnb
                 </a>
             </div>
 
+            <!-- 중간 헤더 -->
             <div class="middle-title">
                 <table class="first">
                     <tr class="middle-chart">
@@ -42,6 +47,7 @@
                 </table>
             </div>
             
+            <!-- 왼쪽 헤더 -->
             <div id="left-head">
                 <div class="host">
                     <button class="host-bt">호스트 되기</button>
@@ -51,7 +57,6 @@
                     <img src="./images/baseline_language_white_24dp.png" width="85%" height="45%">
                     
                 </div>
-
                 <div class="hamburger">
                     <div class="ham-button">
                         <div class="line">
@@ -62,13 +67,11 @@
                         </div>
                     </div>
                 </div>
-
-            </div>          
-        
+            </div>                 
         </div>
         
 
-        <!-- 검색표 -->
+        <!-- 검색창 -->
         <div class="search">
             <div class="search-button"> 
                 <button class="location">
@@ -92,18 +95,15 @@
                         </div>
                     </div>                        
                 </button>
-                
             </div>
-            
         </div>
 
         <!-- 중간 집 이미지 삽입 -->
         <div class="image">
             <div class="house-image">
-                <img src="./images/main-home.webp" width="98%">
+                <img src="./images/main-home.webp" width="98%" alt="메인집">
             </div>
         </div>
-           
     </header>
 
     
@@ -179,11 +179,10 @@
     </section>
 
 
-    <!-- 표 형식 만들어 보기 -->
+    <!-- 어디에서나, 여행은 살아보는 거야! 섹션 -->
     <section id="picture">
         <div class="pic-title">어디에서나, 여행은 살아보는 거야!</div>
         <div class="grid">
-
             <div class="item">
                 <img src="./images/house.webp" width="100%" alt="집">
                 <div class="text">
@@ -209,14 +208,11 @@
                     <h2>반려동물 환영</h2>
                 </div>
             </div>
-
-        </div>
-
         </div>
     </section>
 
     
-    
+    <!-- 호스트가 되어보세요 섹션 -->
     <section id="hosting">
         <img src="images/hosting_Edited.jpg" width="100%" alt="호스트이미지">
     
@@ -228,18 +224,15 @@
             <div class="hosting-bt">
                 <button class="bt">자세히 알아보기</button>
             </div>  
-
         </div>
     </section>
 
 
-
+    <!-- 체험 둘러보기 섹션 -->
     <section id="experience">
         <div class="ex-title">체험 둘러보기</div>
         <div class="ex-title2">현지 전문가와 함께하는 독특한 액티비티에 오프라인이나 온라인으로 참여해 보세요.</div>
-
         <div class="grid">
-
             <div class="item">
                 <img src="./images/sheep.webp" width="100%" alt="양">
                 <div class="text">
@@ -262,12 +255,10 @@
                     <h3>온라인 체험으로 집에서 랜선 여행을 즐기세요.</h3>
                 </div>
             </div>
-
-        </div>
-
         </div>
     </section>
 
+    <!-- 푸터 -->
     <footer id="footer">
         <div class="grid">
             <div class="item">
@@ -324,10 +315,12 @@
             </div>
         </div>
         
+        <!-- 푸터 줄 -->
         <div class="hr-pad"><hr width = "90.2%" color="#DDDDDD" size="1.5px"></div>
+
+        <!-- 푸터 맨 밑부분 -->
         <div class="footer-bottom">
             <div>© 2021 Airbnb, Inc.</div>
-
             <ul>
                 <li><a href="https://www.airbnb.co.kr/terms/privacy_policy">·  개인정보 처리방침</a></li>
                 <li><a href="https://www.airbnb.co.kr/terms">·  이용약관</a></li>
@@ -359,8 +352,6 @@
                     <li><img src="./images/post-2.png"></li>
                 </ul> 
             </div>
-
-
         </div>
     </footer>
     

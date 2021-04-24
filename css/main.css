@@ -7,6 +7,7 @@ body{
     width: 100%;
 }
 
+/* 코로나19 css */
 #title{
     background-color: #222;
     height: 44px;
@@ -22,6 +23,7 @@ body{
     justify-content: center;
 }
 
+/* 헤더 css */
 header {
     background-color: black;
     height: 824px;
@@ -37,10 +39,10 @@ header {
     padding: 0px 0px 0px 86px;
 }
 
+/* 에어비앤비 로고 css */
 #main-title .logo {
     display: flex;
 }
-
 
 #main-title .logo a {
     text-decoration: none;
@@ -51,6 +53,7 @@ header {
     font-family: 'Poppins', sans-serif;
 }
 
+/* 헤더 중간 css */
 #main-title .middle-title{
     color: white;
     margin: auto;
@@ -62,6 +65,7 @@ header {
     font-size: 17.5px;
     padding-left: 35px;
     font-weight: 400;
+    cursor: pointer;
     }
 
 
@@ -71,6 +75,7 @@ header {
     padding-top: 3px;
 }
 
+/* 헤더 왼쪽 css */
 #left-head .host-bt{
     justify-content: center;
     align-items: center;
@@ -85,6 +90,7 @@ header {
     color:white;
     font-size: 15.5px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #left-head .globe{
@@ -92,6 +98,7 @@ header {
     margin: auto;
     padding-bottom: 5px;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 #left-head .hamburger{
@@ -104,6 +111,7 @@ header {
     width: 85px;
     height: 45px;
     border-radius: 130px;
+    cursor: pointer;
 }
 
 #left-head .hamburger .ham-button .line{
@@ -119,15 +127,13 @@ header {
     padding-left: 40px;
 }
 
+/* 검색창 css */
 .search{
-    color: white;
+    color: black;
 }
-
-
 
 .search .search-button {
     background-color: white;
-    color: black;
     width: 945px;
     height: 72px;
     border-radius: 40px;
@@ -254,7 +260,7 @@ header {
     padding-top: 25px;
 }
 
-
+/* 중간 집 이미지 css */
 .house-image{
     display: flex;
     margin: auto;
@@ -265,7 +271,7 @@ header {
     z-index: 1;
 }
 
-
+/* 호스트 분들이 있기에 가능합니다 css */
 .bottom-host{
     color:white;
     display: flex;
@@ -275,9 +281,9 @@ header {
     top: -90px;
     justify-content: center;
     z-index: 2;
-
 }
 
+/* 가까운 여행지 둘러보기 css */
 #city {
     padding-left: 73px;
     padding-right: 107px;
@@ -292,11 +298,11 @@ header {
     font-weight: 700;
 }
 
-
 #city .ctable {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 14px;
+    cursor: pointer;
 }
 
 #city .ctable .item {
@@ -322,6 +328,7 @@ header {
     font-weight: bolder;
 }
 
+/* 어디에서나, 여행은 살아보는 거야! */
 #picture {
     padding:  65px 89px 65px 89px;
     margin: auto;
@@ -337,7 +344,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 17px;
-    margin: 0;
+    margin: auto;
+    cursor: pointer;
 }
 #picture .item img {
     border-radius: 10px;
@@ -354,7 +362,7 @@ header {
     color: rgb(113, 113, 113);
 }
 
-
+/* 호스트가 되어보세요 css */
 #hosting {
     padding: 0px 89px;
 }
@@ -389,7 +397,7 @@ header {
     padding-top: 40px;
 }
 
-#hosting .bt{
+#hosting .hosting-bt .bt{
     display: flex;
     margin: auto;
     background-color: white;
@@ -399,8 +407,10 @@ header {
     font-size: 17px;
     font-weight: bold;
     color: #484848;
+    cursor: pointer;
 }
 
+/* 체험 둘러보기 css */
 #experience {
     padding:  290px 89px 65px 89px;
     margin: auto;
@@ -423,6 +433,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 17px;
     padding-top: 0px;
+    cursor: pointer;
 }
 
 #experience .item img {
@@ -446,7 +457,7 @@ header {
     color: rgb(113, 113, 113);
 }
 
-
+/* 푸터 css */
 footer{    
     border-top: 1px solid #DDDDDD;
     background-color: #f7f7f7;
@@ -503,15 +514,18 @@ footer .footer-bottom  ul a{
 footer .footer-bottom .footer-ul2 ul{
     padding-left: 440px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 footer .footer-bottom .footer-ul3{
     padding-left: 20px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 footer .footer-bottom .footer-ul4{
     padding-left: 30px;
+    cursor: pointer;
 }
 
 footer .footer-bottom .footer-ul4 li{
