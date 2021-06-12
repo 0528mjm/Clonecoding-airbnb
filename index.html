@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,136 +9,387 @@
     <link rel="icon" href="./favicon.ico">
     <!-- 각 브라우저의 기본 스타일을 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- css링크 열기 -->
-    <link rel="stylesheet" href="./css/main.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- 데스크탑 css링크 열기 -->
+    <link rel="stylesheet" href="./css/desk.css" media="screen and (min-width: 950px)">
+    <!-- 테블릿 css링크 열기 -->
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 744px) and (max-width: 949px)">
+    <!-- 모바일 css링크 열기 -->
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 743px)">
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- js링크 -->
-    <link href="js/main.js">
-    <!-- 구글 폰트 링크 -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script async src="./js/main.js"></script>
+    <!-- Google material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
-
 <body>
-    <!-- 코로나19 섹션 -->
-    <section id="title">
-        <a href="https://www.airbnb.co.kr/resources/hosting-homes?persona=guest">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
+     <!-- 중간 집 이미지 삽입 -->
+    <div id="puzzleHousePc">
+        <img src="./images/main-home-pc.webp">
+    </div>
+
+    <div id="puzzleHouseTab">
+        <img src="./images/main-home-tablet.webp">
+    </div>
+
+    <div id="puzzleHouseMob">
+        <img src="./images/main-home-mobile.webp">
+    </div>
+    
+     <!-- 코로나19 섹션 -->
+     <section id="Covid">
+        <a href="https://www.airbnb.co.kr/d/covidsafety">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
     </section>
 
-    <!-- 헤더 -->
-    <header>
-        <div id="main-title">
+        <!-- 헤더 -->
+        <header>
             <!-- 에어비앤비 로고 -->
-            <div class="logo">
-                <img src="images/에어비앤비 로고 흰색.png" ; style="width:38px; height:38px;">
-                <a href="index.html">
-                    airbnb
+            <div class="container">
+                <a href="./index.html">
+                    <img src="./images/logo-black.png" ; style="width:38px;">
                 </a>
-            </div>
 
-            <!-- 중간 헤더 -->
-            <div class="middle-title">
-                <table class="first">
-                    <tr class="middle-chart">
-                        <th>숙소</th>
-                        <th>체험</th>
-                        <th>온라인 체험</th>
-                    </tr>
-                </table>
+                <!-- 숙소, 체험, 온라인 체험 -->
+                <div class="middleTitle">
+                    <div class="middleTitleItem1">숙소</div>
+                    <div class="middleTitleItem">체험</div>
+                    <div class="middleTitleItem">온라인 체험</div>
+                </div>
+
+                <!-- 좌측 호스트 되기 -->
+                <div class="leftTitle">
+                    <div class="leftTitleHost">
+                        <div class="host"><a href="https://www.airbnb.co.kr/host/homes">호스트 되기</a></div>
+                    </div>
+                    <div class="leftTitleGlobe">
+                        <img src="./images/baseline_language_white_24dp.png" width="20px">
+                    </div>    
+                    <div id="hamburger">
+                        <div class="hamburgerBar">
+                            <div class="bar">
+                                <img src="./images/black-24dp (1)/2x/baseline_menu_black_24dp.png" width="25px">
+                            </div>
+                            <div class="personIcon"> 
+                                <img src="./images/black-24dp (2)/2x/baseline_account_circle_black_24dp.png" width="33px">
+                            </div>
+                        </div>                        
+                    </div>    
+                </div>
             </div>
             
-            <!-- 왼쪽 헤더 -->
-            <div id="left-head">
-                <div class="host">
-                    <button class="host-bt">호스트 되기</button>
-                </div>
-
-                <div class="globe">
-                    <img src="./images/baseline_language_white_24dp.png" width="85%" height="45%">
-                    
-                </div>
-                <div class="hamburger">
-                    <div class="ham-button">
-                        <div class="line">
-                            <img src="./images/black-24dp (1)/1x/baseline_menu_black_24dp.png" width="90%">
-                        </div>
-                        <div class="identity">
-                            <img src="./images/black-24dp (2)/2x/baseline_account_circle_black_24dp.png " width="90%">
-                        </div>
-                    </div>
-                </div>
-            </div>                 
-        </div>
         
-
         <!-- 검색창 -->
         <div class="search">
             <div class="search-button"> 
-                <button class="location">
+                <div id="location">
                     <div class="button-top">위치</div>
                     <div class="button-bottom">어디로 여행가세요?</div>
-                </button>
-                <button class="check-in">
+                </div>
+                <div id="checkIn">
                     <div class="button-top2">체크인</div>
                     <div class="button-bottom2">날짜 입력</div>
-                </button>
-                <button class="check-out">
+                </div>
+                <div id="checkOut">
                     <div class="button-top3">체크아웃</div>
                     <div class="button-bottom3">날짜 입력</div>
-                </button>
-                <button class="person">
+                </div>
+                <div id="person">
                     <div class="button-top4">인원</div>
                     <div class="button-bottom4">게스트 추가</div>
                     <div class="mag">
-                        <div class="mag-pink">
+                        <div id="magPink">
                             <img src="./images/baseline_search_white_24dp.png"  alt="돋보기">
                         </div>
-                    </div>                        
-                </button>
+                    </div>                       
+                </div>
             </div>
         </div>
 
-        <!-- 중간 집 이미지 삽입 -->
-        <div class="image">
-            <div class="house-image">
-                <img src="./images/main-home.webp" width="98%" alt="메인집">
+        <!-- 우측의 로그인창 클릭 시 로그인창 나타나기 -->
+        <div id="logIn">
+            <div class="logIn1">
+                <li class="logIn2">회원가입</li>
+                <li class="logIn3">로그인</li>
+                <hr>
+                <li class="logIn4"><a href="https://www.airbnb.co.kr/host/homes">숙소 호스트 되기</a></li>
+                <li class="logIn4"><a href="https://www.airbnb.co.kr/host/experiences?from_nav=1">체험 호스팅 하기</a></li>
+                <li class="logIn4">도움말</li>                
             </div>
+        </div>
+
+        <!-- 검색표의 위치 클릭시 창 나타나기 -->
+        <div id="locationClick">
+            <div id="locationClick1">
+                <div class="locationClick2">
+                    가까운 여행지 불러오기
+                </div>
+                <img src="./images/location.webp" width="52px">
+            </div>
+        </div>
+
+        <!-- 검색표의 체크인, 체크아웃 클릭 시 달력 표시 -->
+        <div id="calendarPad">
+        <div id="calendarAll">
+            <div class="calendarTitle">달력</div>
+            <div class="calendar">
+                <div class="month-indicator">
+                <time>2021년 6월</time>
+                </div>
+                <div class="day-of-week">
+                <div>일</div>
+                <div>월</div>
+                <div>화</div>
+                <div>수</div>
+                <div>목</div>
+                <div>금</div>
+                <div>토</div>
+                </div>
+                <div class="date-grid">
+                <button>
+                    <time>1</time>
+                </button>
+                <button>
+                    <time>2</time>
+                </button>
+                <button>
+                    <time>3</time>
+                </button>
+                <button>
+                    <time>4</time>
+                </button>
+                <button>
+                    <time>5</time>
+                </button>
+                <button>
+                    <time>6</time>
+                </button>
+                <button>
+                    <time>7</time>
+                </button>
+                <button>
+                    <time>8</time>
+                </button>
+                <button>
+                    <time>9</time>
+                </button>
+                <button>
+                    <time>10</time>
+                </button>
+                <button>
+                    <time>11</time>
+                </button>
+                <button>
+                    <time>12</time>
+                </button>
+                <button>
+                    <time>13</time>
+                </button>
+                <button>
+                    <time>14</time>
+                </button>
+                <button>
+                    <time>15</time>
+                </button>
+                <button>
+                    <time>16</time>
+                </button>
+                <button>
+                    <time>17</time>
+                </button>
+                <button>
+                    <time>18</time>
+                </button>
+                <button>
+                    <time>19</time>
+                </button>
+                <button>
+                    <time>20</time>
+                </button>
+                <button>
+                    <time>21</time>
+                </button>
+                <button>
+                    <time>22</time>
+                </button>
+                <button>
+                    <time>23</time>
+                </button>
+                <button>
+                    <time>24</time>
+                </button>
+                <button>
+                    <time>25</time>
+                </button>
+                <button>
+                    <time>26</time>
+                </button>
+                <button>
+                    <time>27</time>
+                </button>
+                <button>
+                    <time>28</time>
+                </button>
+                <button>
+                    <time>29</time>
+                </button>
+                <button>
+                    <time>30</time>
+                </button>
+                </div>
+            </div>
+    
+    
+            <div class="calendar">
+                <div class="month-indicator">
+                <time>2021년 6월</time>
+                </div>
+                <div class="day-of-week">
+                <div>일</div>
+                <div>월</div>
+                <div>화</div>
+                <div>수</div>
+                <div>목</div>
+                <div>금</div>
+                <div>토</div>
+                </div>
+                <div class="date-grid">
+                <button>
+                    <time>1</time>
+                </button>
+                <button>
+                    <time>2</time>
+                </button>
+                <button>
+                    <time>3</time>
+                </button>
+                <button>
+                    <time>4</time>
+                </button>
+                <button>
+                    <time>5</time>
+                </button>
+                <button>
+                    <time>6</time>
+                </button>
+                <button>
+                    <time>7</time>
+                </button>
+                <button>
+                    <time>8</time>
+                </button>
+                <button>
+                    <time>9</time>
+                </button>
+                <button>
+                    <time>10</time>
+                </button>
+                <button>
+                    <time>11</time>
+                </button>
+                <button>
+                    <time>12</time>
+                </button>
+                <button>
+                    <time>13</time>
+                </button>
+                <button>
+                    <time>14</time>
+                </button>
+                <button>
+                    <time>15</time>
+                </button>
+                <button>
+                    <time>16</time>
+                </button>
+                <button>
+                    <time>17</time>
+                </button>
+                <button>
+                    <time>18</time>
+                </button>
+                <button>
+                    <time>19</time>
+                </button>
+                <button>
+                    <time>20</time>
+                </button>
+                <button>
+                    <time>21</time>
+                </button>
+                <button>
+                    <time>22</time>
+                </button>
+                <button>
+                    <time>23</time>
+                </button>
+                <button>
+                    <time>24</time>
+                </button>
+                <button>
+                    <time>25</time>
+                </button>
+                <button>
+                    <time>26</time>
+                </button>
+                <button>
+                    <time>27</time>
+                </button>
+                <button>
+                    <time>28</time>
+                </button>
+                <button>
+                    <time>29</time>
+                </button>
+                <button>
+                    <time>30</time>
+                </button>
+                </div>
+            </div>
+        </div>
         </div>
     </header>
-
     
-    <!-- 호스트분들이 있기에 가능합니다 -->
-    <div class="bottom-host">호스트 분들이 있기에 가능합니다</div>
+
+    <!--좌측 에어비앤비 2021 -->
+    <div class="bottomHost">
+        <div class="bottomHost1"><img src="./images/airbnb2021.svg"></div>
+        <div class="bottomHost2">100개 이상의 신규 <br>기능을 소개합니다</div>
+        <div class="bottomHost3">
+            <div class="bottomHost3-1"><a href="https://www.airbnb.co.kr/2021">새로운 기능 알아보기</a></div>
+        </div>
+    </div>
 
 
-    <!-- 가까운 여행지 둘러보기 섹션 -->
-    <section id="city">
-        <div class="city-title">가까운 여행지 둘러보기</div>
+    <div class="cityTitle">가까운 여행지 둘러보기</div>
+     <!-- 가까운 여행지 둘러보기 섹션 -->
+     <section id="city">
         <br>
         <section class="ctable">
             <div class="item">
-                <img src="images/c1.webp" width="77%" alt="서울">
+                <img src="images/c1.webp" width="65px" alt="서울">
                 <div class="text">
                     <div class="big">서울</div>
                     <div>차로 1.5시간 거리</div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/c2.webp" width="77%" alt="대전">
+                <img src="images/c2.webp" width="65px" alt="대전">
                 <div class="text">
                     <div class="big">대전</div>
                     <div>차로 3시간 거리</div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/c3.webp" width="77%" alt="인천">
+                <img src="images/c3.webp" width="65px" alt="인천">
                 <div class="text">
                     <div class="big">인천</div>
                     <div>차로 2시간 거리</div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/c4.webp" width="77%" alt="대구">
+                <img src="images/c4.webp" width="65px" alt="대구">
                 <div class="text">
                     <div class="big">대구</div>
                     <div>차로 3.5시간 거리</div>
@@ -146,75 +397,93 @@
             </div>
 
             <div class="item">
-                <img src="images/c5.webp" width="77%" alt="안산">
+                <img src="images/c5.webp" width="65px" alt="안산">
                 <div class="text">
                     <div class="big">안산시</div>
                     <div>차로 2시간 거리</div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/c6.webp" width="77%" alt="울산">
+                <img src="images/c6.webp" width="65px" alt="울산">
                 <div class="text">
                     <div class="big">울산시</div>
                     <div>차로 4.5시간 거리</div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/c7.webp" width="77%" alt="수원">
+                <img src="images/c7.webp" width="65px" alt="수원">
                 <div class="text">
                     <div class="big">수원시</div>
                     <div>차로 2시간 거리</div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/c8.webp" width="77%" alt="광주">
+                <img src="images/c8.webp" width="65px" alt="광주">
                 <div class="text">
                     <div class="big">광주시</div>
                     <div>차로 5시간 거리</div>
                 </div>
             </div>
-
-    
         </section>
     </section>
 
-
-    <!-- 어디에서나, 여행은 살아보는 거야! 섹션 -->
-    <section id="picture">
-        <div class="pic-title">어디에서나, 여행은 살아보는 거야!</div>
-        <div class="grid">
-            <div class="item">
-                <img src="./images/house.webp" width="100%" alt="집">
-                <div class="text">
-                    <h2>집 전체</h2>
+    <!-- 슬라이더-어디에서나 여행은 살아보는거야! -->
+    <div class="swiperAll">
+        <div class="swiperTitle">어디에서나 여행은 살아보는거야!</div>
+        <br>
+        <br>
+        <div class="swiper-container mySwiper">
+            <!-- 슬라이드 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imgTitle">
+                        집 전체
+                        <a href="https://www.airbnb.co.kr/s/homes?ne_lat=58.479274530412056&ne_lng=153.9467893238238&sw_lat=15.360725469587951&sw_lng=100.01321067617623&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=2&search_type=NAVIGATION_CARD&title_type=CURATED_PROPERTY_TYPE">
+                            <img src="./images/house.webp" />
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="item">
-                <img src="./images/space.webp" width="100%" alt="통나무집">
-                <div class="text">
-                    <h2>독특한 공간</h2>
+                <div class="swiper-slide">
+                    <div class="imgTitle">
+                        반려동물 동반 가능
+                        <a href="https://www.airbnb.co.kr/s/homes?ne_lat=58.479274530412056&ne_lng=153.9467893238238&sw_lat=15.360725469587951&sw_lng=100.01321067617623&room_types%5B%5D=Entire%20home%2Fapt&amenities%5B%5D=12&search_type=NAVIGATION_CARD&title_type=CURATED_PROPERTY_TYPE">
+                            <img src="./images/dog.webp" />
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="./images/farm.webp" width="100%" alt="농장">
-                <div class="text">
-                    <h2>통나무집 및 전원주택</h2>
+                <div class="swiper-slide">
+                    <div class="imgTitle">
+                        자연생활을 만낄할 수 있는 숙소
+                        <a href="https://www.airbnb.co.kr/s/homes?refinement_paths%5B%5D=%2Fhomes%2Fsection%2FNEARBY_LISTINGS%3A483&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=57&property_type_id%5B%5D=4&property_type_id%5B%5D=32&property_type_id%5B%5D=58&property_type_id%5B%5D=18&property_type_id%5B%5D=22&property_type_id%5B%5D=17&property_type_id%5B%5D=23&property_type_id%5B%5D=63&property_type_id%5B%5D=24&property_type_id%5B%5D=12&property_type_id%5B%5D=19&property_type_id%5B%5D=44&property_type_id%5B%5D=66&property_type_id%5B%5D=34&property_type_id%5B%5D=16&property_type_id%5B%5D=6&property_type_id%5B%5D=69&property_type_id%5B%5D=15&title_type=CURATED_PROPERTY_TYPE">
+                            <img src="./images/farm.webp" />
+                        </a>
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="imgTitle">
+                        독특한 공간
+                        <a href="https://www.airbnb.co.kr/s/homes?refinement_paths%5B%5D=%2Fhomes%2Fsection%2FNEARBY_LISTINGS%3A2400&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=5&property_type_id%5B%5D=6&property_type_id%5B%5D=8&property_type_id%5B%5D=10&property_type_id%5B%5D=12&property_type_id%5B%5D=15&property_type_id%5B%5D=16&property_type_id%5B%5D=17&property_type_id%5B%5D=18&property_type_id%5B%5D=19&property_type_id%5B%5D=23&property_type_id%5B%5D=24&property_type_id%5B%5D=25&property_type_id%5B%5D=28&property_type_id%5B%5D=32&property_type_id%5B%5D=34&property_type_id%5B%5D=44&property_type_id%5B%5D=50&property_type_id%5B%5D=54&property_type_id%5B%5D=57&property_type_id%5B%5D=58&property_type_id%5B%5D=61&property_type_id%5B%5D=63&property_type_id%5B%5D=64&property_type_id%5B%5D=66&property_type_id%5B%5D=67&property_type_id%5B%5D=68&property_type_id%5B%5D=69&property_type_id%5B%5D=62&property_type_id%5B%5D=51&title_type=CURATED_PROPERTY_TYPE">
+                            <img src="./images/space.webp" />
+                        </a>
+                    </div>
+                </div>            
             </div>
-            <div class="item">
-                <img src="./images/dog.webp" width="100%" alt="반려동물">
-                <div class="text">
-                    <h2>반려동물 환영</h2>
-                </div>
-            </div>
+            <!-- 슬라이더 화살표 -->
+            <span class="material-icons slider-arrow arrow-prev">
+                arrow_left
+            </span>
+            <span class="material-icons slider-arrow arrow-next">
+                arrow_right
+            </span>
+            <!-- 슬라이더 페이지네이션 -->
+            <div class="swiper-pagination"></div>
         </div>
-    </section>
-
+    </div>
+    
     
     <!-- 호스트가 되어보세요 섹션 -->
     <section id="hosting">
-        <img src="images/hosting_Edited.jpg" width="100%" alt="호스트이미지">
+        <img src="images/hosting_Edited.jpg" width="95%" alt="호스트이미지">
     
         <div class="text">
             <h1>호스트가</h1>
@@ -222,7 +491,9 @@
             <h2>숙소를 공유하여 부수입을 올리고 새로운 </h2>
             <h3>가능성을 만나세요.</h3>
             <div class="hosting-bt">
-                <button class="bt">자세히 알아보기</button>
+                <a href="https://www.airbnb.co.kr/host/homes?_set_bev_on_new_domain=1623435385_ZmVlMzUyZjNkNmUy">
+                    <button class="bt">자세히 알아보기</button>
+                </a>
             </div>  
         </div>
     </section>
@@ -234,7 +505,9 @@
         <div class="ex-title2">현지 전문가와 함께하는 독특한 액티비티에 오프라인이나 온라인으로 참여해 보세요.</div>
         <div class="grid">
             <div class="item">
-                <img src="./images/sheep.webp" width="100%" alt="양">
+                <a href="https://www.airbnb.co.kr/s/experiences?location_search=NEARBY">
+                    <img src="./images/sheep.webp" width="100%" alt="양">
+                </a>
                 <div class="text">
                     <h2>체험</h2>
                     <h3>어디에서든 세계 각지의 매력을 만나실 수 있습니다.</h3>
@@ -242,14 +515,18 @@
             </div>
 
             <div class="item">
-                <img src="./images/online.webp" width="100%" alt="통나무집">
+                <a href="https://www.airbnb.co.kr/s/experiences/online">
+                    <img src="./images/online.webp" width="100%" alt="통나무집">
+                </a>
                 <div class="text">
                     <h2>온라인 체험</h2>
                     <h3>호스트와 실시간으로 소통하면서 액티비티를 즐겨보세요.</h3>
                 </div>
             </div>
             <div class="item">
-                <img src="./images/recommend.webp" width="100%" alt="농장">
+                <a href="https://www.airbnb.co.kr/s/all?refinement_paths%5B%5D=%2Fplaylists%2F46390&last_search_session_id=48872c98-73f2-4bc4-8fa6-e90542a7422c&search_type=section_navigation">
+                    <img src="./images/recommend.webp" width="100%" alt="농장">
+                </a>
                 <div class="text">
                     <h2>추천 컬렉션: 여행 본능을 깨우는 체험</h2>
                     <h3>온라인 체험으로 집에서 랜선 여행을 즐기세요.</h3>
@@ -315,6 +592,8 @@
             </div>
         </div>
         
+
+
         <!-- 푸터 줄 -->
         <div class="hr-pad"><hr width = "90.2%" color="#DDDDDD" size="1.5px"></div>
 
@@ -331,7 +610,7 @@
         
             <div class="footer-ul2">
                 <ul>
-                    <li><img src="./images/black-24dp (3)/1x/baseline_language_black_24dp.png"></li>
+                    <li><img src="./images/black-24dp (3)/1x/baseline_language_black_24dp.png" width="17px" height="16px"></li>
                     <li><ins>한국어(KR)</ins></li>
                 </ul>
             </div>
@@ -345,15 +624,36 @@
 
             <div class="footer-ul4">
                 <ul>
-                    <li><img src="./images/black-24dp (4)/1x/baseline_facebook_black_24dp.png"></li>
-                    <li><img src="./images/twitter-3.png"></li>
-                    <li><img src="./images/Instagram-3.png"></li>
-                    <li><img src="./images/naver-3.png"></li>
-                    <li><img src="./images/post-2.png"></li>
+                    <li>
+                        <a href="https://www.facebook.com/AirbnbKorea">
+                            <img src="./images/black-24dp (4)/1x/baseline_facebook_black_24dp.png" width="22px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/airbnb">
+                            <img src="./images/twitter-3.png" width="20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/airbnb/">
+                            <img src="./images/Instagram-3.png" width="22px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/airbnbkr">
+                            <img src="./images/naver-3.png" width="20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://post.naver.com/airbnb_kr">
+                            <img src="./images/post-2.png" width="21px">
+                        </a>
+                    </li>
                 </ul> 
             </div>
         </div>
     </footer>
-    
+
+
 </body>
 </html>

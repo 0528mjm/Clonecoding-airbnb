@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    background-color: white;
+    color: #222222;
+}
+
+#Covid{
+    background-color:#222222;
+    height: 37px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+#Covid a{
+    color: darkgrey;
+    display: flex;
+    justify-content: center;
+}
+
+#puzzleHousePc img{
+   display: none;
+}
+#puzzleHouseMob img{
+    display: none;
+}
+
+#puzzleHouseTab img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
